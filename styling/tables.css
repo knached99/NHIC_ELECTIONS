@@ -1,0 +1,17 @@
+table{
+  background-color: #fff;
+}
+
+table td{
+    color: #111121;
+}
+
+table tr{
+  background-color: #fff;
+}
+
+table th{
+  color: #fff;
+  font-weight: 700;
+  background-color: #54aaff;
+}
