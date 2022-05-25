@@ -96,13 +96,14 @@ $phonePattern = '/^(\({1}\d{3}\){1}|\d{3})(\s|-|.)\d{3}(\s|-|.)\d{4}$/';
         $mail = new PHPMailer(true);
 
           //Server settings
-          $mail->SMTPDebug = 0; //Setting debug to 0 to prevent
+          $mail->_pass
+            Debug = 0; //Setting debug to 0 to prevent
           // verbose debug output from displaying to client                      //SMTP::DEBUG_SERVER; // Enable verbose debug output
           $mail->isSMTP(true);                                            // Send using SMTP
           $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through Gmail
           $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
           $mail->Username   = 'nhicvoting@gmail.com';                     // SMTP username
-          $mail->Password   = 'ClubPenguin99!';                               // SMTP password
+          $mail->Password   = '';                               // SMTP password (not showing for privacy)
           $mail->SMTPSecure = ssl;//PHPMailer::ENCRYPTION_STMPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
           $mail->Port       = 465; //PREVIOUSLY 587                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
